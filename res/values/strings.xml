@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wzy</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">订单生成</string>
+    <string name="title_section2">流程控制</string>
+    <string name="title_section3">数据分析</string>
+    <string name="addr">配送地址：</string>
+
+    <string-array name="addr">
+        <item>一公寓</item>
+        <item>二公寓</item>
+        <item>三公寓</item>
+        <item>四公寓</item>
+        <item>五公寓</item>
+        <item>六公寓</item>
+        <item>七公寓</item>
+        <item>八公寓</item>
+        <item>九公寓</item>
+        <item>十公寓</item>
+        <item>十一公寓</item>
+        <item>十二公寓</item>
+        <item>十三公寓</item>
+        <item>十四公寓</item>
+        <item>十五公寓</item>
+        <item>船海楼</item>
+        <item>水声楼</item>
+        <item>动力楼</item>
+        <item>11号楼</item>
+        <item>21号楼</item>
+        <item>31号楼</item>
+        <item>41号楼</item>
+        
+    </string-array>
+
+</resources>

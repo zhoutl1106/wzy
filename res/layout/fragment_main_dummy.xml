@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$DummySectionFragment"
+    android:descendantFocusability="beforeDescendants" >
+
+    <TextView
+        android:id="@+id/textTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜品列表" />
+       
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textTip"
+        android:id="@+id/linear" >
+
+        <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:phoneNumber="true"
+        android:hint="请输入电话号码"
+        android:layout_weight="0.5">
+
+        	<requestFocus />
+    	</EditText>
+        
+        <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:prompt="@string/addr"
+        android:layout_weight="0.5"/>
+        
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear"
+        android:id="@+id/linear2" >
+
+        <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="获取号码" />
+        
+        <Button
+        android:id="@+id/btnComfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="确认订单" />
+        
+	</LinearLayout>
+    
+    
+   
+        
+        
+
+    <ListView
+        android:id="@+id/section_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2" />
+
+    
+
+</RelativeLayout>
